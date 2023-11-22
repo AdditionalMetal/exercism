@@ -9,7 +9,7 @@ int compute(const char *lhs, const char *rhs){
 
   while ( *lhs != 0 || *rhs != 0){
     if ( (*lhs == 0 && *rhs != 0) ||
-	 (*lhs != 0 && *rhs == 0) ){ // length mismatch
+         (*lhs != 0 && *rhs == 0) ){ // length mismatch
       return -1;
     }
 
