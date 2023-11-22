@@ -26,7 +26,7 @@ int main(void){
 
   RUN_TEST(test_ipow_1_7)  ;
   RUN_TEST(test_ipow_2_7)  ;
-  RUN_TEST(test_ipow_12_3);
+  RUN_TEST(test_ipow_12_3) ;
   
   return UnityEnd();
 }
