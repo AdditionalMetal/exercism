@@ -8,8 +8,7 @@ int compute(const char *lhs, const char *rhs){
     return -1;
 
   while ( *lhs != 0 || *rhs != 0){
-    if ( (*lhs == 0 && *rhs != 0) ||
-         (*lhs != 0 && *rhs == 0) ){ // length mismatch
+    if  ( *lhs == 0 || *rhs == 0){ // length mismatch
       return -1;
     }
 
@@ -17,8 +16,7 @@ int compute(const char *lhs, const char *rhs){
       hamming++;
     }
     
-    lhs++;
-    rhs++;
+    lhs++; rhs++;
   }
   return hamming;
 }
