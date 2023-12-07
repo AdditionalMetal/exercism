@@ -26,7 +26,6 @@ static void test_root_of_25(void)
 
 static void test_root_of_81(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT16(9, square_root(81));
 }
 
